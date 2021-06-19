@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  /* colors */
+  --DarkCyan: hsl(185, 75%, 39%);
+  --VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --DarkGrayishBlue: hsl(227, 10%, 46%);
+  --DarkGrey: hsl(0, 0%, 59%);
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  border: red 1px solid;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-content: center;
+  background-color: var(--DarkCyan);
+  background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 26vh, top 43vh left 38vw;
+}
+.images-1,
+.images-2 {
+  position: absolute;
+}
+.images-1 {
+  right: -50%;
+  top: -50%;
+}
+.images-2 {
+  left: -57%;
+  bottom: -73%;
+}
+.heading {
+  font-weight: 700;
+  color: var(--VeryDarkDesaturatedBlue);
+}
+.text_grey {
+  color: var(--DarkGrey);
+  font-weight: 700;
+}
+.main_body .text_grey {
+  font-weight: 400;
+}
+p {
+  font-size: 1.5rem;
+}
+.card {
+  position: relative;
+  background: white;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  height: 38rem;
+  width: 38rem;
+  display: flex;
+  flex-direction: column;
+  /*   align-items: center; */
+}
+.header {
+  background: url("./images/bg-pattern-card.svg");
+  width: 100%;
+  height: 14rem;
+}
+.section {
+  position: relative;
+}
+.profile_image {
+  position: absolute;
+  height: 10rem;
+  width: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 5px solid white;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  margin-top: -15%;
+}
+.main_body {
+  text-align: center;
+  margin-top: 7rem;
+}
+.details {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  padding: 2.5rem;
+  justify-content: space-evenly;
+  border-top: 1px solid lightgray;
+  display: flex;
+}
+.count {
+  text-align: center;
+}
+.attribution {
+  margin-top: auto;
+}
